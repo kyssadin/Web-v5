@@ -1,0 +1,140 @@
+body {
+	width: 80%;
+	margin: 20px auto;
+	background-color: #191919;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+.flex-container {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+.flex-item {
+	margin: 20px;
+	font-size: 20pt;
+}
+#tabs {
+	height: 80vh;
+}
+
+.flex-container.photo-panel-container {
+	width: 80vw;
+	height: 60vh;
+}
+
+.panels {
+	width: 25vw;
+}
+.menu {
+	font-size: 20pt;
+}
+
+h2 {
+	text-align: center;
+}
+#photo-slider,
+#video-slider,
+#multimedia{
+	margin: auto;
+}
+#informer-container {
+	justify-content: space-between;
+}
+#informer-container > .flex-item {
+	font-size: 12pt;
+}
+
+.weather-wrapper {
+	background: skyblue;
+	padding: 40px 5%;
+	float: left;
+	color: white;
+	width: 25%;
+	max-width: 400px;
+	margin: auto;
+}
+strong {
+	color: steelblue;
+}
+
+
+
+#time-currency-container {
+	flex-direction: column;
+	margin: auto;
+}
+th {
+	text-align: left;
+}
+footer {
+	background-color: #9985be;
+	height: 100px;
+	margin: auto;
+	align-items: center;
+}
+
+.ui-tabs .ui-tabs-nav
+{
+	background: #8967a0;
+}
+
+.ui-tabs .ui-tabs-panel /* just in case you want to change the panel */
+{
+	background: blue;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	list-style-image:none;
+	display:inline;
+	border: none;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+.fa-youtube {
+	background: #bb0000;
+	color: white;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}

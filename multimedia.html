@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Covervid</title>
+
+    <link href="multimedia.css" rel="stylesheet" />
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            type="text/javascript"
+    ></script>
+
+    <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.13.0-rc.3/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/ui/1.13.0-rc.3/jquery-ui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/default/ug-theme-default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/default/ug-theme-default.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/slider/ug-theme-slider.min.js"></script>
+
+    <script src="covervid/covervid.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="covervid-wrapper">
+    <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
+        <source src="videoplayback.webm" type="video/webm">
+        <source src="videoplayback.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<script>$('.covervid-video').coverVid(1920, 1080);</script>
+
+
+
+</body>
+</html>

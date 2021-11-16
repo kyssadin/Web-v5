@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Lab 5 </title>
+	<link href="style.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript">
+	</script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0-rc.3/themes/smoothness/jquery-ui.css" />
+	<script src="https://code.jquery.com/ui/1.13.0-rc.3/jquery-ui.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js">
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/default/ug-theme-default.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/default/ug-theme-default.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/slider/ug-theme-slider.min.js">
+	</script>
+	<script src="script.js">
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<main>
+	<div id="tabs" style="background: none repeat scroll 0% 0% rgb(242,217,242);">
+		<ul style="display: flex; align-content: center; justify-content: center">
+			<li> <a href="#Widgets">Widgets
+			</a> </li>
+			<li> <a href="#VideoSlider">Video Slider
+			</a> </li>
+			<li> <a href="#PhotoSlider">Photo Slider
+			</a> </li>
+			<li> <a href="#Multimedias">Multimedia
+			</a> </li>
+			<li> <a href="#Panels">Photo Gallery
+			</a> </li>
+		</ul>
+		<div id="Panels">
+			<div class="flex-container photo-panel-container" id="panel-container">
+				<ul class="flex-item menu" id="panel-list">
+					<li>
+						<div onclick="processLink('https://i1.sndcdn.com/avatars-ILGyfSVFrUQ71Bgn-t3KgoQ-t500x500.jpg')">Panel 1 </div>
+					</li>
+					<li>
+						<div onclick="processLink('https://i.pinimg.com/236x/e7/77/74/e77774e6b35e384f6448e588a7fdb3c3.jpg')">Panel 2 </div>
+					</li>
+					<li>
+						<div onclick="processLink('https://data.whicdn.com/images/331977770/original.jpg')">Panel 3 </div>
+					</li>
+					<li>
+						<div onclick="processLink('https://pbs.twimg.com/profile_images/1336767267892236297/xEzRxbIX_400x400.jpg')">Panel 4 </div>
+					</li>
+					<li>
+						<div>Other </div>
+						<ul>
+							<li>
+								<div onclick="processLink('https://cf.shopee.ph/file/b16ccd3a3793f32e0c04722a64e49ce3')">Panel 5 </div>
+							</li>
+							<li>
+								<div onclick="processLink('https://ae05.alicdn.com/kf/HTB117B_SFXXXXc_XFXXq6xXFXXXq/Tokyo-Ghoul-anime-manga-artwork-PCJ36-canvas-fabric-poster-square-print-for-wall-art-room-decor.jpg')">Panel 6 </div>
+							</li>
+							<li>
+								<div onclick="processLink('http://cdn.shopify.com/s/files/1/0151/0741/products/b0d86fe75379460f24cc19171424cc22_1024x1024.jpg?v=1578642953')">Panel 7 </div>
+						</ul>
+					</li>
+				</ul> <span class="flex-item panels" id="link-img">
+            </span> </div>
+		</div>
+		<div id="PhotoSlider">
+			<section class="regular slider flex-item" id="photo-slider"> <img alt="Kira" data-image="https://wallpapercave.com/wp/wp4592439.png" data-description="Kira" /> <img alt="Josuke" data-image="https://www.meme-arsenal.com/memes/05ac1801f12120306b5d850cb85ce3bb.jpg" data-description="Josuke" /> <img alt="Jotaro" data-image="https://wallpaperaccess.com/full/1082875.png" data-description="Jotaro" /> </section>
+		</div>
+		<div id="VideoSlider">
+			<section class="flex-item" id="video-slider">
+				<div data-type="youtube" data-videoid="hCqUw7g7KJg" data-title="Hayato"> </div>
+				<div data-type="youtube" data-videoid="I1dktHJSk9o" data-title="Omae wa kono Nijimura Okuyasu-no, Za Hando ga kesu"> </div>
+				<div data-type="youtube" data-videoid="4GaOSyCs5Z8" data-title="Kira Yoshikage double kill"> </div>
+			</section>
+		</div>
+		<div id="Widgets">
+			<section class="flex-container" id="informer-container">
+				<div class="weather-wrapper hide flex-item" style="display: block"> <a class="weatherwidget-io" href="https://forecast7.com/en/50d1430d74/ukrainka/" data-label_1="UKRAINE" data-label_2="WEATHER" data-theme="original">UKRAINE WEATHER
+				</a>
+					<script>
+						! function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							if(!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = 'https://weatherwidget.io/js/widget.min.js';
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}
+						(document, 'script', 'weatherwidget-io-js');
+					</script>
+				</div>
+				<section class="flex-item flex-container" id="time-currency-container">
+					<fxwidget-er inverse="false" amount="100" decimals="2" large="false" shadow="true" symbol="true" flag="true" changes="true" grouping="true" border="false" main-curr="UAH" sel-curr="EUR,USD,RUB" background-color="#ffe4c4" lang="uk"> </fxwidget-er>
+					<a href="https://currencyrate.today/"> </a>
+					<script async src="https://s.fx-w.io/widgets/exchange-rates/latest.js?uk">
+					</script>
+					<br>
+					<br>
+					<br> <a href="https://time.is/Kyiv" id="time_is_link" rel="nofollow" style="font-size:36px">Киев:
+				</a> <span id="Kyiv_z713" style="font-size:36px">
+              </span>
+					<script src="//widget.time.is/t.js">
+					</script>
+					<script>
+						time_is_widget.init({
+							Kyiv_z713: {}
+						});
+					</script>
+				</section>
+			</section>
+		</div>
+		<div id="Multimedias">
+			<section class="flex-item" id="multimedia"> <a href="multimedia.html"> Посилання
+			</a> </section>
+		</div>
+	</div>
+</main>
+<script>
+	$("#tabs").tabs();
+	$("#panel-list").menu();
+	jQuery("#photo-slider").unitegallery();
+	jQuery("#video-slider").unitegallery({
+		gallery_theme: "slider",
+	});
+	$(window).on("load", function() {
+		$("#pictures").tjGallery();
+	});
+</script>
+</body>
+<footer>
+	<ul>
+		<a href="https://ru-ru.facebook.com/" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+		<a href="https://bit.ly/3EWv5wm" class="fa fa-youtube"></a>
+	</ul>
+</footer>
+
+</html>
